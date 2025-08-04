@@ -45,9 +45,9 @@ Note: These may not be the most efficient implementations (array queue is pretty
 
 ## Architecture
 
-- **HashMap**: BTreeMap-based implementation optimized for general use
+- **HashMap**: BTreeMap-based implementation
 - **PriorityQueue**: BinaryHeap-based with price-time priority
-- **ArrayQueue**: Lock-free queues optimized for "high-frequency" submissions
+- **ArrayQueue**: Lock-free queues (pretty bad perf)
 
 Each implementation satisfies the same `OrderBookTrait` interface, making them interchangeable.
  
